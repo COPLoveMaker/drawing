@@ -9,10 +9,16 @@ public class DisplayPanel extends JPanel {
 
     Drawable drawable = null;
 
+    public DisplayPanel ()
+    {
+        this.setBackground(Color.WHITE);
+    }
+
     public void setDrawable(Drawable drawable) {
         this.drawable = drawable;
         repaint();
     }
+
 
     @Override
     public void paintComponent(Graphics g) {
